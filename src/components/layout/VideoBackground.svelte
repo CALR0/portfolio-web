@@ -66,7 +66,7 @@
     playsinline
     preload="auto"
   >
-    <source src="/src/assets/videoplayback.webm" type="video/webm">
+    <source src="/videoplayback.webm" type="video/webm">
     <!-- Fallback para navegadores que no soporten webm -->
     Your browser does not support the video tag.
   </video>

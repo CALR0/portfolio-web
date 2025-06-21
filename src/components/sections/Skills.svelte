@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { observeElement } from '../utils/intersection'
-  import { slideUp, scaleIn, fadeIn } from '../utils/animations'
-  import { primarySkills, additionalSkills } from '../data/skills'
-  import SkillCard from './ui/SkillCard.svelte'
-  import { t } from '../utils/i18n'
+  import { observeElement } from '../../utils/intersection'
+  import { slideUp, scaleIn, fadeIn } from '../../utils/animations'
+  import { primarySkills, additionalSkills } from '../../data/skills'
+  import SkillCard from '../ui/SkillCard.svelte'
+  import { t } from '../../utils/i18n'
   
   let sectionRef: HTMLElement
   let isVisible = $state(false)

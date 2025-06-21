@@ -1,10 +1,10 @@
 <script lang="ts">
   import { Briefcase } from 'lucide-svelte'
   import { onMount } from 'svelte'
-  import { NAVIGATION_SECTIONS, updateActiveSection, scrollToSection, type NavigationSection } from '../utils/navigation'
-  import { observeElement } from '../utils/intersection'
-  import { t } from '../utils/i18n'
-  import LanguageToggle from './ui/LanguageToggle.svelte'
+  import { NAVIGATION_SECTIONS, updateActiveSection, scrollToSection, type NavigationSection } from '../../utils/navigation'
+  import { observeElement } from '../../utils/intersection'
+  import { t } from '../../utils/i18n'
+  import LanguageToggle from '../ui/LanguageToggle.svelte'
   
   let isMenuOpen = $state(false)
   let activeSection = $state<NavigationSection>('home')

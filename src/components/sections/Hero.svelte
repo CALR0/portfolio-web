@@ -1,8 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { TypewriterEffect } from '../utils/typewriter'
-  import { scrollToSection } from '../utils/navigation'
-  import { t } from '../utils/i18n'
+  import { TypewriterEffect } from '../../utils/typewriter'
+  import { scrollToSection } from '../../utils/navigation'
+  import { t } from '../../utils/i18n'
   
   let mounted = $state(false)
   let heroRef: HTMLElement

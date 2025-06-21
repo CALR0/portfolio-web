@@ -1,8 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { observeElement } from '../utils/intersection'
-  import { fadeIn, slideUp, slideLeft, slideRight, scaleIn } from '../utils/animations'
-  import { t } from '../utils/i18n'
+  import { observeElement } from '../../utils/intersection'
+  import { fadeIn, slideUp, slideLeft, slideRight, scaleIn } from '../../utils/animations'
+  import { t } from '../../utils/i18n'
   
   let sectionRef: HTMLElement
   let isVisible = $state(false)
@@ -39,7 +39,7 @@
     img.onerror = () => {
       imageError = true
     }
-    img.src = '/src/assets/picture.png'
+    img.src = '/picture.png'
     
     return cleanup
   })
@@ -88,7 +88,7 @@
                   <!-- Actual photo -->
                   {#if !imageError}
                     <img 
-                      src="/src/assets/picture.png" 
+                      src="/picture.png" 
                       alt="Carlos Lizarazo"
                       class="w-full h-full object-cover rounded-2xl transition-all duration-700 group-hover:scale-105 {imageLoaded ? 'opacity-100' : 'opacity-0'}"
                       loading="eager"
@@ -137,7 +137,7 @@
                   <!-- Actual photo -->
                   {#if !imageError}
                     <img 
-                      src="/src/assets/picture.png" 
+                      src="/picture.png" 
                       alt="Carlos Lizarazo"
                       class="w-full h-full object-cover rounded-2xl transition-all duration-700 group-hover:scale-105 {imageLoaded ? 'opacity-100' : 'opacity-0'}"
                       loading="eager"
