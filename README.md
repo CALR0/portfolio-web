@@ -2,6 +2,8 @@
 
 Modern and responsive portfolio website showcasing my work as a Full Stack Developer.
 
+Take a look: https://clizarazodev.netlify.app/
+
 ## 🌐 Technologies
 
 ### Frontend
