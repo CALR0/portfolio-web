@@ -2,7 +2,7 @@
 
 Modern and responsive portfolio website showcasing my work as a Full Stack Developer.
 
-## 🚀 Technologies
+## 🌐 Technologies
 
 ### Frontend
 - **Svelte 5** - Modern reactive framework
