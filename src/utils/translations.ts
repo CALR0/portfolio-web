@@ -46,6 +46,17 @@ export const translations = {
       keyAchievements: 'Key achievements:',
       technologiesUsed: 'Technologies used:',
       experiences: {
+        systemsEngineering: {
+          title: 'Systems Engineering',
+          company: 'Universidad del Magdalena',
+          description: 'Currently pursuing a Bachelor\'s degree in Systems Engineering with a focus on software development, algorithms, and modern web technologies.',
+          achievements: [
+            'Developing strong foundations in software engineering principles and best practices.',
+            'Learning advanced programming concepts, data structures, and algorithms.',
+            'Gaining expertise in database design, system architecture, and project management.',
+            'Participating in academic projects involving full-stack web development.'
+          ]
+        },
         melropDesktop: {
           title: 'Software Developer',
           company: 'Melrop Store',
@@ -190,6 +201,17 @@ export const translations = {
       keyAchievements: 'Logros clave:',
       technologiesUsed: 'Tecnologías utilizadas:',
       experiences: {
+        systemsEngineering: {
+          title: 'Ingeniería de Sistemas',
+          company: 'Universidad del Magdalena',
+          description: 'Actualmente cursando un pregrado en Ingeniería de Sistemas con enfoque en desarrollo de software, algoritmos y tecnologías web modernas.',
+          achievements: [
+            'Desarrollando bases sólidas en principios de ingeniería de software y mejores prácticas.',
+            'Aprendiendo conceptos avanzados de programación, estructuras de datos y algoritmos.',
+            'Adquiriendo experiencia en diseño de bases de datos, arquitectura de sistemas y gestión de proyectos.',
+            'Participando en proyectos académicos que involucran desarrollo web full-stack.'
+          ]
+        },
         melropDesktop: {
           title: 'Desarrollador de Software',
           company: 'Melrop Store',
