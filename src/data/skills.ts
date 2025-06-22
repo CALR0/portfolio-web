@@ -20,6 +20,12 @@ export const primarySkills: Skill[] = [
     level: 88
   },
   { 
+    name: 'Svelte', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg',
+    color: '#FF3E00',
+    level: 82
+  },
+  { 
     name: 'Java', 
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
     color: '#ED8B00',

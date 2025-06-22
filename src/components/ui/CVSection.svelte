@@ -15,13 +15,63 @@
     es: '/CV - CARLOS LIZARAZO (ESPAÑOL).pdf'
   }
   
-  const downloadCV = (language: 'en' | 'es') => {
-    const link = document.createElement('a')
-    link.href = cvFiles[language]
-    link.download = `CV-Carlos-Lizarazo-${language.toUpperCase()}.pdf`
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+  const downloadCV = async (language: 'en' | 'es') => {
+    try {
+      // Verificar si el navegador soporta la API File System Access
+      if ('showSaveFilePicker' in window) {
+        // Usar la API moderna para permitir al usuario elegir la ubicación
+        const fileHandle = await (window as any).showSaveFilePicker({
+          suggestedName: `CV-Carlos-Lizarazo-${language.toUpperCase()}.pdf`,
+          types: [{
+            description: 'PDF files',
+            accept: { 'application/pdf': ['.pdf'] }
+          }]
+        })
+        
+        // Descargar el archivo
+        const response = await fetch(cvFiles[language])
+        const blob = await response.blob()
+        
+        // Escribir el archivo en la ubicación elegida
+        const writable = await fileHandle.createWritable()
+        await writable.write(blob)
+        await writable.close()
+        
+      } else {
+        // Fallback para navegadores que no soportan la API moderna
+        const response = await fetch(cvFiles[language])
+        const blob = await response.blob()
+        const url = window.URL.createObjectURL(blob)
+        
+        const link = document.createElement('a')
+        link.href = url
+        link.download = `CV-Carlos-Lizarazo-${language.toUpperCase()}.pdf`
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+        
+        // Limpiar el objeto URL
+        window.URL.revokeObjectURL(url)
+      }
+    } catch (error) {
+      // Si el usuario cancela o hay un error, usar el método tradicional
+      if (error.name !== 'AbortError') {
+        console.warn('Error with save dialog, falling back to traditional download:', error)
+        
+        const response = await fetch(cvFiles[language])
+        const blob = await response.blob()
+        const url = window.URL.createObjectURL(blob)
+        
+        const link = document.createElement('a')
+        link.href = url
+        link.download = `CV-Carlos-Lizarazo-${language.toUpperCase()}.pdf`
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+        
+        window.URL.revokeObjectURL(url)
+      }
+    }
   }
 </script>
 

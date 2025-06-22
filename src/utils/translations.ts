@@ -32,7 +32,7 @@ export const translations = {
       intro2: 'My journey began with Java and Spring, where I developed a solid foundation in backend architecture and enterprise-level development. I have solid experience in building responsive, component-based frontend interfaces. These days, you\'ll find me exploring new technologies or contributing to open-source projects.',
       whatIDo: 'Work approach',
       skills: [
-        'Frontend Development (React, Typescript, Javascript, HTML, CSS).',
+        'Frontend Development (React, Svelte, Typescript, Javascript, HTML, CSS).',
         'Backend Development (Node.js, Express.js, Spring Boot, Java).',
         'Database Creation & Management (PostgreSQL, MySQL).',
         'Building and managing RESTful APIs.'
@@ -75,7 +75,7 @@ export const translations = {
       description: 'I have hands-on experience with core technologies like TypeScript, JavaScript, Java, Node.js, and Spring Boot, allowing me to build fullstack applications with clean architecture and modern development practices.',
       coreTitle: 'Core technologies & frameworks',
       additionalTitle: 'Additional tools & technologies',
-      frontendExpertise: "I'm especially strong in frontend development, with solid experience building responsive, component-based user interfaces using React, TypeScript, HTML, CSS, and Vite."
+      frontendExpertise: "I'm especially strong in frontend development, with solid experience building responsive, component-based user interfaces using React, Svelte, TypeScript, HTML, CSS, and Vite."
     },
     
     // Projects Section
@@ -176,7 +176,7 @@ export const translations = {
       intro2: 'Mi viaje empezó con Java y Spring, donde desarrollé una base sólida en arquitectura backend y desarrollo a nivel empresarial. Tengo experiencia sólida en la construcción de interfaces frontend responsivas y basadas en componentes. En estos días, me encontrarás explorando nuevas tecnologías o contribuyendo a proyectos de código abierto.',
       whatIDo: 'Enfoque de trabajo',
       skills: [
-        'Desarrollo Frontend (React, Typescript, Javascript, HTML, CSS).',
+        'Desarrollo Frontend (React, Svelte, Typescript, Javascript, HTML, CSS).',
         'Desarrollo Backend (Node.js, Express.js, Spring Boot, Java).',
         'Creación y Gestión de Bases de Datos (PostgreSQL, MySQL).',
         'Construcción y gestión de APIs RESTful.'
@@ -219,7 +219,7 @@ export const translations = {
       description: 'Tengo experiencia con tecnologías principales como TypeScript, JavaScript, Java, Node.js y Spring Boot, lo que me permite construir aplicaciones fullstack con arquitectura limpia y prácticas de desarrollo modernas.',
       coreTitle: 'Tecnologías y frameworks principales',
       additionalTitle: 'Herramientas y tecnologías adicionales',
-      frontendExpertise: 'Soy especialmente fuerte en desarrollo frontend, con experiencia sólida construyendo interfaces de usuario responsivas y basadas en componentes usando React, TypeScript, HTML, CSS y Vite.'
+      frontendExpertise: 'Soy especialmente fuerte en desarrollo frontend, con experiencia sólida construyendo interfaces de usuario responsivas y basadas en componentes usando React, Svelte, TypeScript, HTML, CSS y Vite.'
     },
     
     // Projects Section
