@@ -15,6 +15,9 @@
   
   // Reactive variable to hold the chosen transition function
   let transitionFn = $derived(index % 2 === 0 ? slideLeft : slideRight)
+  
+  // Get translated period
+  let translatedPeriod = $derived($t(`experience.periods.${experience.id}.period`))
 </script>
 
 <div class="relative flex flex-col md:flex-row items-start md:items-center {index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}">
@@ -53,7 +56,7 @@
         <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-4 text-sm text-gray-400">
           <div class="flex items-center gap-2">
             <Calendar size={16} class="text-blue-400" />
-            <span>{experience.period}</span>
+            <span>{translatedPeriod}</span>
           </div>
           <div class="flex items-center gap-2">
             <MapPin size={16} class="text-blue-400" />

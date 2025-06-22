@@ -45,6 +45,17 @@ export const translations = {
       description: "Here's my professional journey and key achievements:",
       keyAchievements: 'Key achievements:',
       technologiesUsed: 'Technologies used:',
+      periods: {
+        systemsEngineering: {
+          period: '2021 - Present'
+        },
+        melropDesktop: {
+          period: 'March 2023 - January 2024'
+        },
+        melropWeb: {
+          period: 'March 2025 - June 2025'
+        }
+      },
       experiences: {
         systemsEngineering: {
           title: 'Systems Engineering',
@@ -200,6 +211,17 @@ export const translations = {
       description: 'Aquí está mi trayectoria profesional y logros clave:',
       keyAchievements: 'Logros clave:',
       technologiesUsed: 'Tecnologías utilizadas:',
+      periods: {
+        systemsEngineering: {
+          period: '2021 - Presente'
+        },
+        melropDesktop: {
+          period: 'Marzo 2023 - Enero 2024'
+        },
+        melropWeb: {
+          period: 'Marzo 2025 - Junio 2025'
+        }
+      },
       experiences: {
         systemsEngineering: {
           title: 'Ingeniería de Sistemas',
