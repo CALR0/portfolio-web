@@ -125,9 +125,9 @@ export const translations = {
           title: 'Rentcar Back-end',
           description: 'API for the Rentcar system, a comprehensive platform for managing vehicle rentals efficiently and securely.'
         },
-        myApartmentFront: {
-          title: 'MyApartment Front-end',
-          description: 'An administrative web application for apartment and reservation management, with a modern interface.'
+        blockloom: {
+          title: 'Blockloom',
+          description: 'A web tool for previewing and generating component variants (HTML+CSS) with an intuitive interface.'
         }
       }
     },
@@ -291,9 +291,9 @@ export const translations = {
           title: 'Rentcar Back-end',
           description: 'API para el sistema Rentcar, una plataforma integral para gestionar alquileres de vehículos de manera eficiente y segura.'
         },
-        myApartmentFront: {
-          title: 'MyApartment Front-end',
-          description: 'Una aplicación web administrativa para la gestión de apartamentos y reservas, con una interfaz moderna.'
+        blockloom: {
+          title: 'Blockloom',
+          description: 'Una herramienta web para previsualizar y generar variantes de componentes (HTML+CSS) con otras funcionalidades.'
         }
       }
     },

@@ -2,6 +2,15 @@ import type { Project } from '../types'
 
 export const projects: Project[] = [
   {
+    id: 'blockloom',
+    title: 'Blockloom',
+    description: 'A web tool for previewing and generating component variants (HTML+CSS) with another features.',
+    image: 'https://i.imgur.com/GLoycfp.png',
+    technologies: ['Svelte', 'Vite', 'TypeScript'],
+    github: 'https://github.com/CALR0/Blockloom-app',
+    demo: 'https://github.com/CALR0/Blockloom-app'
+  },
+  {
     id: 'melropWeb',
     title: 'Melrop Store Web App',
     description: 'An informative website for Melrop Store with a modern and interactive interface, located in Santa Marta.',
@@ -45,14 +54,5 @@ export const projects: Project[] = [
     technologies: ['Spring Boot', 'Gradle', 'PostgreSQL', 'Java'],
     github: 'https://github.com/CALR0/rent-car-backend',
     demo: 'https://github.com/CALR0/rent-car-backend'
-  },
-  {
-    id: 'myApartmentFront',
-    title: 'MyApartment Front-end',
-    description: 'An administrative web application for apartment and reservation management, with a modern interface.',
-    image: 'https://img.freepik.com/vector-premium/icono-edificio-estilo-comic-ilustracion-vector-dibujos-animados-apartamento-rascacielos-ciudad-sobre-fondo-blanco-aislado-concepto-negocio-efecto-salpicadura-torre-ciudad_157943-10305.jpg',
-    technologies: ['React', 'Vite', 'Tailwind', 'Typescript'],
-    github: 'https://github.com/CALR0/myapartment-front',
-    demo: 'https://github.com/CALR0/myapartment-front'
   }
 ]
