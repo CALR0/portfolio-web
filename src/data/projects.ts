@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: 'blockloom',
     title: 'Blockloom',
     description: 'A web tool for previewing and generating component variants (HTML+CSS) with another features.',
-    image: 'https://i.imgur.com/GLoycfp.png',
+    image: 'https://i.imgur.com/bvb0mV5.png',
     technologies: ['Svelte', 'Vite', 'TypeScript'],
     github: 'https://github.com/CALR0/Blockloom-app',
     demo: 'https://github.com/CALR0/Blockloom-app'
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     id: 'melropWeb',
     title: 'Melrop Store Web App',
     description: 'An informative website for Melrop Store with a modern and interactive interface, located in Santa Marta.',
-    image: 'https://github.com/CALR0/melrop-store-webapp/raw/main/public/demo1.png',
+    image: 'https://i.imgur.com/C22Li5c.png',
     technologies: ['React', 'Tailwind', 'Framer Motion', 'Vite', 'Typescript'],
     github: 'https://github.com/CALR0/melrop-store-webapp',
     demo: 'https://melropstore.netlify.app/'
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     id: 'linkedMagFront',
     title: 'LinkedMag Front-end',
     description: 'LinkedMag is a platform for managing internships for students at the Universidad del Magdalena.',
-    image: 'https://github.com/CALR0/linked-mag-front/raw/master/public/demo3.png',
+    image: 'https://i.imgur.com/7GZQh5a.png',
     technologies: ['Angular', 'PrimeNG', 'PrimeIcons', 'Typescript'],
     github: 'https://github.com/CALR0/linked-mag-front',
     demo: 'https://linkedmag.netlify.app/'
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     id: 'rentcarFront',
     title: 'Rentcar Front-end',
     description: 'Rentcar is a web platform that offers users a vehicle search and rental experience.',
-    image: 'https://github.com/CALR0/rent-car-front/raw/main/public/demo1.png',
+    image: 'https://i.imgur.com/NkzHvpR.png',
     technologies: ['React', 'React Router', 'Vite', 'Javascript'],
     github: 'https://github.com/CALR0/rent-car-front',
     demo: 'https://rentcaronlineapp.netlify.app/'
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     title: 'Rentcar Back-end',
     description: 'API for the Rentcar system, a comprehensive platform for managing vehicle rentals efficiently and securely.',
     image: 'https://blog.danielpadua.dev/assets/img/posts/java-spring-boot-intellij-idea/featured.png',
-    technologies: ['Spring Boot', 'Gradle', 'PostgreSQL', 'Java'],
+    technologies: ['Spring Boot', 'Gradle', 'Java', 'PostgreSQL'],
     github: 'https://github.com/CALR0/rent-car-backend',
     demo: 'https://github.com/CALR0/rent-car-backend'
   }

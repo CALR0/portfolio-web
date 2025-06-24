@@ -127,7 +127,7 @@ export const translations = {
         },
         blockloom: {
           title: 'Blockloom',
-          description: 'A web tool for previewing and generating component variants (HTML+CSS) with an intuitive interface.'
+          description: 'A web tool for previewing and generating component variants (HTML+CSS) with another features.'
         }
       }
     },
