@@ -50,7 +50,7 @@ export const projects: Project[] = [
     id: 'rentcarBack',
     title: 'Rentcar Back-end',
     description: 'API for the Rentcar system, a comprehensive platform for managing vehicle rentals efficiently and securely.',
-    image: 'https://blog.danielpadua.dev/assets/img/posts/java-spring-boot-intellij-idea/featured.png',
+    image: 'https://cdn.openwebinars.net/media/fbads-spring-boot-docker.jpg',
     technologies: ['Spring Boot', 'Gradle', 'Java', 'PostgreSQL'],
     github: 'https://github.com/CALR0/rent-car-backend',
     demo: 'https://github.com/CALR0/rent-car-backend'
