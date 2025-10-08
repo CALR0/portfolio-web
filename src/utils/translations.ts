@@ -129,6 +129,11 @@ export const translations = {
           title: 'Blockloom',
           description: 'A web tool for previewing and generating component variants (HTML+CSS) with another features.'
         }
+        ,
+        taskflow: {
+          title: 'TaskFlow',
+          description: 'Web application for managing tasks and projects using the Kanban methodology.'
+        }
       }
     },
     
@@ -294,6 +299,11 @@ export const translations = {
         blockloom: {
           title: 'Blockloom',
           description: 'Una herramienta web para previsualizar y generar variantes de componentes (HTML+CSS) con otras funcionalidades.'
+        }
+        ,
+        taskflow: {
+          title: 'TaskFlow',
+          description: 'Aplicación web para gestionar tareas y proyectos usando la metodología Kanban.'
         }
       }
     },

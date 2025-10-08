@@ -2,6 +2,15 @@ import type { Project } from '../types'
 
 export const projects: Project[] = [
   {
+    id: 'taskflow',
+    title: 'TaskFlow',
+    description: 'Web application for managing tasks and projects using the Kanban methodology.',
+    image: 'https://i.imgur.com/jxJV5qV.jpeg',
+    technologies: ['Next.js', 'Tailwind', 'SQL Server', 'Azure'],
+    github: 'https://github.com/Akiii-lab/KanbanProject',
+    demo: 'https://task-flow-dps.vercel.app'
+  },
+  {
     id: 'blockloom',
     title: 'Blockloom',
     description: 'A web tool for previewing and generating component variants (HTML+CSS) with another features.',
