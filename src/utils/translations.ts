@@ -33,8 +33,8 @@ export const translations = {
       whatIDo: 'Work approach',
       skills: [
         'Frontend Development (React, Svelte, Typescript, Javascript, HTML, CSS).',
-        'Backend Development (Node.js, Express.js, Spring Boot, Java).',
-        'Database Creation & Management (PostgreSQL, MySQL).',
+        'Backend Development (.NET, Node.js, Express.js, Spring Boot, Java).',
+        'Database Creation & Management (PostgreSQL, MySQL, Azure).',
         'Building and managing RESTful APIs.'
       ]
     },
@@ -50,10 +50,10 @@ export const translations = {
           period: '2021 - Present'
         },
         melropDesktop: {
-          period: 'March 2023 - January 2024'
+          period: 'August 2023 - January 2024'
         },
         melropWeb: {
-          period: 'March 2025 - June 2025'
+          period: 'January 2025 - June 2025'
         }
       },
       experiences: {
@@ -134,6 +134,15 @@ export const translations = {
           title: 'TaskFlow',
           description: 'Web application for managing tasks and projects using the Kanban methodology.'
         }
+        ,
+        talentoLocalBack: {
+          title: 'TalentoLocal Back-end',
+          description: 'A platform for publishing and applying to job offers and calls in the city of Santa Marta.'
+        },
+        safemap: {
+          title: 'SafeMap',
+          description: 'Mobile application for reporting incidents. Users can attach videos and photos and view reports on a real-time map.'
+        }
       }
     },
     
@@ -144,9 +153,8 @@ export const translations = {
       footer: 'Built with Svelte and Tailwind CSS.',
       cv: {
         sectionTitle: 'Download my Resume',
-        description: 'Get my curriculum vitae in your preferred language',
-        downloadEnglish: 'Download English Version',
-        downloadSpanish: 'Download Spanish Version',
+        description: 'Get my curriculum vitae here',
+        download: 'Download',
         additionalInfo: 'Available in PDF format for easy viewing and printing'
       },
       socialLinks: {
@@ -204,8 +212,8 @@ export const translations = {
       whatIDo: 'Enfoque de trabajo',
       skills: [
         'Desarrollo Frontend (React, Svelte, Typescript, Javascript, HTML, CSS).',
-        'Desarrollo Backend (Node.js, Express.js, Spring Boot, Java).',
-        'Creación y Gestión de Bases de Datos (PostgreSQL, MySQL).',
+        'Desarrollo Backend (.NET, Node.js, Express.js, Spring Boot, Java).',
+        'Creación y Gestión de Bases de Datos (PostgreSQL, MySQL, Azure).',
         'Construcción y gestión de APIs RESTful.'
       ]
     },
@@ -221,10 +229,10 @@ export const translations = {
           period: '2021 - Presente'
         },
         melropDesktop: {
-          period: 'Marzo 2023 - Enero 2024'
+          period: 'Agosto 2023 - Enero 2024'
         },
         melropWeb: {
-          period: 'Marzo 2025 - Junio 2025'
+          period: 'Enero 2025 - Junio 2025'
         }
       },
       experiences: {
@@ -305,6 +313,15 @@ export const translations = {
           title: 'TaskFlow',
           description: 'Aplicación web para gestionar tareas y proyectos usando la metodología Kanban.'
         }
+        ,
+        talentoLocalBack: {
+          title: 'TalentoLocal Back-end',
+          description: 'Plataforma para la publicación y postulación a convocatorias y ofertas de trabajo en la ciudad de Santa Marta.'
+        },
+        safemap: {
+          title: 'SafeMap',
+          description: 'Aplicación móvil para reportar incidentes: permite adjuntar videos y fotos y visualizar los reportes en un mapa en tiempo real.'
+        }
       }
     },
     
@@ -315,9 +332,8 @@ export const translations = {
       footer: 'Construido con Svelte y Tailwind CSS.',
       cv: {
         sectionTitle: 'Descarga mi currículum',
-        description: 'Obtén mi currículum vitae en tu idioma preferido',
-        downloadEnglish: 'Descargar en Inglés',
-        downloadSpanish: 'Descargar en Español',
+        description: 'Obtén mi currículum vitae aquí',
+        download: 'Descargar',
         additionalInfo: 'Disponible en formato PDF para fácil visualización e impresión'
       },
       socialLinks: {

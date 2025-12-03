@@ -37,6 +37,11 @@
     
     return cleanup
   })
+
+  // Compute how many items form full desktop rows (4 columns)
+  const additionalCount = additionalSkills.length
+  const additionalRemainder = additionalCount % 4
+  const additionalFull = additionalCount - additionalRemainder
 </script>
 
 <section id="skills" class="py-20 relative section-transition" bind:this={sectionRef}>
@@ -64,12 +69,11 @@
           </h3>
         {/if}
         
-        <!-- Desktop Layout: 4 + 3 aligned -->
+        <!-- Desktop Layout: uniform grid so items wrap evenly -->
         <div class="hidden lg:block">
           <div class="max-w-4xl mx-auto">
-            <!-- First row: 4 skills -->
             <div class="grid grid-cols-4 gap-8 mb-12">
-              {#each primarySkills.slice(0, 4) as skill, index}
+              {#each primarySkills as skill, index}
                 <SkillCard 
                   {skill} 
                   isVisible={primarySkillsVisible}
@@ -78,28 +82,13 @@
                 />
               {/each}
             </div>
-            
-            <!-- Second row: 3 skills centered -->
-            <div class="flex justify-center">
-              <div class="grid grid-cols-3 gap-8 max-w-2xl">
-                {#each primarySkills.slice(4) as skill, index}
-                  <SkillCard 
-                    {skill}
-                    isVisible={primarySkillsVisible}
-                    animationDelay="{0.42 + index * 0.08}"
-                    animationType="bounce-in"
-                  />
-                {/each}
-              </div>
-            </div>
           </div>
         </div>
-        
-        <!-- Mobile/Tablet Layout with centered last item -->
+
+        <!-- Mobile/Tablet Layout: responsive grid showing all skills evenly -->
         <div class="lg:hidden">
-          <!-- First 6 skills in grid -->
           <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-6">
-            {#each primarySkills.slice(0, 6) as skill, index}
+            {#each primarySkills as skill, index}
               <SkillCard 
                 {skill} 
                 isVisible={primarySkillsVisible}
@@ -108,20 +97,6 @@
               />
             {/each}
           </div>
-          
-          <!-- Last skill centered -->
-          {#if primarySkills.length > 6}
-            <div class="flex justify-center">
-              <div class="w-1/2 md:w-1/3">
-                <SkillCard 
-                  skill={primarySkills[6]}
-                  isVisible={primarySkillsVisible}
-                  animationDelay="{0.46}"
-                  animationType="bounce-in"
-                />
-              </div>
-            </div>
-          {/if}
         </div>
       </div>
       
@@ -133,40 +108,62 @@
           </h3>
         {/if}
         
-        <!-- Desktop Layout: 4 + 2 aligned -->
+        <!-- Desktop Layout: show full rows of 4, and center the last incomplete row -->
         <div class="hidden lg:block">
           <div class="max-w-4xl mx-auto">
-            <!-- First row: 4 skills -->
-            <div class="grid grid-cols-4 gap-8 mb-12">
-              {#each additionalSkills.slice(0, 4) as skill, index}
-                <SkillCard 
-                  {skill} 
-                  isVisible={additionalSkillsVisible}
-                  animationDelay="{0.1 + index * 0.08}"
-                  animationType="rotate-in"
-                />
-              {/each}
-            </div>
-            
-            <!-- Second row: 2 skills aligned with first and third columns -->
-            <div class="grid grid-cols-4 gap-8">
-              <div class="col-start-2">
-                <SkillCard 
-                  skill={additionalSkills[4]}
-                  isVisible={additionalSkillsVisible}
-                  animationDelay="{0.42}"
-                  animationType="rotate-in"
-                />
+            {#if additionalFull > 0}
+              <div class="grid grid-cols-4 gap-8 mb-8">
+                {#each additionalSkills.slice(0, additionalFull) as skill, index}
+                  <SkillCard 
+                    {skill} 
+                    isVisible={additionalSkillsVisible}
+                    animationDelay="{0.1 + index * 0.08}"
+                    animationType="rotate-in"
+                  />
+                {/each}
               </div>
-              <div class="col-start-3">
-                <SkillCard 
-                  skill={additionalSkills[5]}
-                  isVisible={additionalSkillsVisible}
-                  animationDelay="{0.5}"
-                  animationType="rotate-in"
-                />
+            {/if}
+
+            {#if additionalRemainder === 1}
+              <div class="flex justify-center">
+                <div class="grid grid-cols-1 gap-8 max-w-2xl">
+                  {#each additionalSkills.slice(additionalFull) as skill, index}
+                    <SkillCard 
+                      {skill}
+                      isVisible={additionalSkillsVisible}
+                      animationDelay="{0.1 + index * 0.08}"
+                      animationType="rotate-in"
+                    />
+                  {/each}
+                </div>
               </div>
-            </div>
+            {:else if additionalRemainder === 2}
+              <div class="flex justify-center">
+                <div class="grid grid-cols-2 gap-8 max-w-2xl">
+                  {#each additionalSkills.slice(additionalFull) as skill, index}
+                    <SkillCard 
+                      {skill}
+                      isVisible={additionalSkillsVisible}
+                      animationDelay="{0.1 + index * 0.08}"
+                      animationType="rotate-in"
+                    />
+                  {/each}
+                </div>
+              </div>
+            {:else if additionalRemainder === 3}
+              <div class="flex justify-center">
+                <div class="grid grid-cols-3 gap-8 max-w-2xl">
+                  {#each additionalSkills.slice(additionalFull) as skill, index}
+                    <SkillCard 
+                      {skill}
+                      isVisible={additionalSkillsVisible}
+                      animationDelay="{0.1 + index * 0.08}"
+                      animationType="rotate-in"
+                    />
+                  {/each}
+                </div>
+              </div>
+            {/if}
           </div>
         </div>
         

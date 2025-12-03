@@ -10,66 +10,45 @@
   
   let { isVisible, animationDelay }: Props = $props()
   
-  const cvFiles = {
-    en: '/CV - CARLOS LIZARAZO (ENGLISH).pdf',
-    es: '/CV - CARLOS LIZARAZO (ESPAÑOL).pdf'
-  }
-  
-  const downloadCV = async (language: 'en' | 'es') => {
+  // Single CV file (Spanish) — download only one version
+  const cvFile = '/CV - CARLOS LIZARAZO (ESPAÑOL).pdf'
+
+  const downloadCV = async () => {
     try {
-      // Verificar si el navegador soporta la API File System Access
+      // If File System Access API is available, allow save-as
       if ('showSaveFilePicker' in window) {
-        // Usar la API moderna para permitir al usuario elegir la ubicación
         const fileHandle = await (window as any).showSaveFilePicker({
-          suggestedName: `CV-Carlos-Lizarazo-${language.toUpperCase()}.pdf`,
+          suggestedName: `CV-Carlos-Lizarazo-ES.pdf`,
           types: [{
             description: 'PDF files',
             accept: { 'application/pdf': ['.pdf'] }
           }]
         })
-        
-        // Descargar el archivo
-        const response = await fetch(cvFiles[language])
+
+        const response = await fetch(cvFile)
         const blob = await response.blob()
-        
-        // Escribir el archivo en la ubicación elegida
+
         const writable = await fileHandle.createWritable()
         await writable.write(blob)
         await writable.close()
-        
       } else {
-        // Fallback para navegadores que no soportan la API moderna
-        const response = await fetch(cvFiles[language])
+        // Fallback traditional download
+        const response = await fetch(cvFile)
         const blob = await response.blob()
         const url = window.URL.createObjectURL(blob)
-        
+
         const link = document.createElement('a')
         link.href = url
-        link.download = `CV-Carlos-Lizarazo-${language.toUpperCase()}.pdf`
+        link.download = `CV-Carlos-Lizarazo-ES.pdf`
         document.body.appendChild(link)
         link.click()
         document.body.removeChild(link)
-        
-        // Limpiar el objeto URL
+
         window.URL.revokeObjectURL(url)
       }
     } catch (error) {
-      // Si el usuario cancela o hay un error, usar el método tradicional
       if (error.name !== 'AbortError') {
-        console.warn('Error with save dialog, falling back to traditional download:', error)
-        
-        const response = await fetch(cvFiles[language])
-        const blob = await response.blob()
-        const url = window.URL.createObjectURL(blob)
-        
-        const link = document.createElement('a')
-        link.href = url
-        link.download = `CV-Carlos-Lizarazo-${language.toUpperCase()}.pdf`
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
-        
-        window.URL.revokeObjectURL(url)
+        console.warn('Error downloading CV:', error)
       }
     }
   }
@@ -90,25 +69,14 @@
       </p>
     </div>
     
-    <!-- CV Download Buttons -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-      
-      <!-- English CV Download Button -->
+    <!-- CV Download Button (single) -->
+    <div class="flex justify-center items-center max-w-md mx-auto">
       <button
-        onclick={() => downloadCV('en')}
+        onclick={() => downloadCV()}
         class="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/25 font-medium text-base"
       >
         <Download size={20} />
-        <span>{$t('contact.cv.downloadEnglish')}</span>
-      </button>
-      
-      <!-- Spanish CV Download Button -->
-      <button
-        onclick={() => downloadCV('es')}
-        class="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/25 font-medium text-base"
-      >
-        <Download size={20} />
-        <span>{$t('contact.cv.downloadSpanish')}</span>
+        <span>{$t('contact.cv.download')}</span>
       </button>
     </div>
     

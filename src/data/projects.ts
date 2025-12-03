@@ -7,8 +7,26 @@ export const projects: Project[] = [
     description: 'Web application for managing tasks and projects using the Kanban methodology.',
     image: 'https://i.imgur.com/jxJV5qV.jpeg',
     technologies: ['Next.js', 'Tailwind', 'SQL Server', 'Azure'],
-    github: 'https://github.com/Akiii-lab/KanbanProject',
+    github: 'https://github.com/CALR0/KanbanProject',
     demo: 'https://task-flow-dps.vercel.app'
+  },
+  {
+    id: 'talentoLocalBack',
+    title: 'TalentoLocal Back-end',
+    description: 'Platform for publishing and applying to job offers and calls in the city of Santa Marta.',
+    image: 'https://i.imgur.com/tP2SKM9.png',
+    technologies: ['ASP.NET', 'EF Core', 'Azure'],
+    github: 'https://github.com/CALR0/TalentoLocal-backend',
+    demo: 'https://talento-local-web-client.vercel.app'
+  },
+  {
+    id: 'safemap',
+    title: 'SafeMap',
+    description: 'Mobile application for reporting incidents — attach videos and photos and view a real-time map of reports.',
+    image: 'https://i.imgur.com/8ob86PU.png',
+    technologies: ['Flutter', 'Cloudinary', 'Firestore'],
+    github: 'https://github.com/CALR0/safe-map-app',
+    demo: 'https://github.com/CALR0/safe-map-app'
   },
   {
     id: 'blockloom',

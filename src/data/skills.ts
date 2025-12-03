@@ -32,6 +32,12 @@ export const primarySkills: Skill[] = [
     level: 82
   },
   { 
+    name: 'ASP.NET',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+    color: '#512BD4',
+    level: 70
+  },
+  { 
     name: 'Node.js', 
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
     color: '#339933',
@@ -81,5 +87,12 @@ export const additionalSkills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
     color: '#4479A1',
     level: 72
+  }
+  ,
+  { 
+    name: 'Azure',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
+    color: '#0078D4',
+    level: 70
   }
 ]
