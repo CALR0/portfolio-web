@@ -8,27 +8,9 @@ export const primarySkills: Skill[] = [
     level: 90
   },
   { 
-    name: 'TypeScript', 
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-    color: '#3178C6',
-    level: 85
-  },
-  { 
-    name: 'JavaScript', 
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-    color: '#F7DF1E',
-    level: 88
-  },
-  { 
     name: 'Svelte', 
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg',
     color: '#FF3E00',
-    level: 82
-  },
-  { 
-    name: 'Java', 
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
-    color: '#ED8B00',
     level: 82
   },
   { 
@@ -48,6 +30,24 @@ export const primarySkills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
     color: '#6DB33F',
     level: 78
+  },
+  { 
+    name: 'Angular', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+    color: '#DD0031',
+    level: 75
+  },
+  {
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    color: "#2496ED",
+    level: 70
+  },
+  {
+    name: "Visual Studio Code",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
+    color: "#5C2D91",
+    level: 75
   }
 ]
 

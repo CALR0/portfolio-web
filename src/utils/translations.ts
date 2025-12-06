@@ -32,10 +32,11 @@ export const translations = {
       intro2: 'My journey began with Java and Spring, where I developed a solid foundation in backend architecture and enterprise-level development. I have solid experience in building responsive, component-based frontend interfaces. These days, you\'ll find me exploring new technologies or contributing to open-source projects.',
       whatIDo: 'Work approach',
       skills: [
-        'Frontend Development (React, Svelte, Typescript, Javascript, HTML, CSS).',
-        'Backend Development (.NET, Node.js, Express.js, Spring Boot, Java).',
+        'Frontend Development (React (Typescript, Javascript), Angular, Svelte, HTML, CSS).',
+        'Backend Development (.NET, Node.js, Next.js, Spring Boot).',
         'Database Creation & Management (PostgreSQL, MySQL, Azure).',
-        'Building and managing RESTful APIs.'
+        'Building and managing RESTful APIs.',
+        'Version control with Git, and collaborative work using GitHub, Azure DevOps.'
       ]
     },
     
@@ -94,10 +95,10 @@ export const translations = {
     // Skills Section
     skills: {
       title: 'Skills',
-      description: 'I have hands-on experience with core technologies like TypeScript, JavaScript, Java, Node.js, and Spring Boot, allowing me to build fullstack applications with clean architecture and modern development practices.',
+      description: 'I have hands-on experience with core technologies like Node.js, .NET, Spring Boot and others, allowing me to build fullstack applications with clean architecture and modern development practices.',
       coreTitle: 'Core technologies & frameworks',
       additionalTitle: 'Additional tools & technologies',
-      frontendExpertise: "I'm especially strong in frontend development, with solid experience building responsive, component-based user interfaces using React, Svelte, TypeScript, HTML, CSS, and Vite."
+      frontendExpertise: "I'm especially strong in frontend development, with solid experience building responsive, component-based user interfaces using React, Angular, Svelte, HTML, CSS."
     },
     
     // Projects Section
@@ -211,10 +212,11 @@ export const translations = {
       intro2: 'Mi viaje empezó con Java y Spring, donde desarrollé una base sólida en arquitectura backend y desarrollo a nivel empresarial. Tengo experiencia sólida en la construcción de interfaces frontend responsivas y basadas en componentes. En estos días, me encontrarás explorando nuevas tecnologías o contribuyendo a proyectos de código abierto.',
       whatIDo: 'Enfoque de trabajo',
       skills: [
-        'Desarrollo Frontend (React, Svelte, Typescript, Javascript, HTML, CSS).',
-        'Desarrollo Backend (.NET, Node.js, Express.js, Spring Boot, Java).',
-        'Creación y Gestión de Bases de Datos (PostgreSQL, MySQL, Azure).',
-        'Construcción y gestión de APIs RESTful.'
+        'Desarrollo Frontend (React (TypeScript, JavaScript), Angular, Svelte, HTML, CSS).',
+        'Desarrollo Backend (.NET, Node.js, Next.js, Spring Boot).',
+        'Creación y gestión de Bases de Datos (PostgreSQL, MySQL, Azure).',
+        'Construcción y gestión de APIs RESTful.',
+        'Control de versiones con Git, y trabajo colaborativo con GitHub, Azure DevOps.'
       ]
     },
     
@@ -273,10 +275,10 @@ export const translations = {
     // Skills Section
     skills: {
       title: 'Habilidades',
-      description: 'Tengo experiencia con tecnologías principales como TypeScript, JavaScript, Java, Node.js y Spring Boot, lo que me permite construir aplicaciones fullstack con arquitectura limpia y prácticas de desarrollo modernas.',
+      description: 'Tengo experiencia con tecnologías principales como Node.js, .NET, Spring Boot y otras más, lo que me permite construir aplicaciones fullstack con arquitectura limpia y prácticas de desarrollo modernas.',
       coreTitle: 'Tecnologías y frameworks principales',
       additionalTitle: 'Herramientas y tecnologías adicionales',
-      frontendExpertise: 'Soy especialmente fuerte en desarrollo frontend, con experiencia sólida construyendo interfaces de usuario responsivas y basadas en componentes usando React, Svelte, TypeScript, HTML, CSS y Vite.'
+      frontendExpertise: 'Soy especialmente fuerte en desarrollo frontend, con experiencia sólida construyendo interfaces de usuario responsivas y basadas en componentes usando React, Angular, Svelte, HTML, CSS.'
     },
     
     // Projects Section
