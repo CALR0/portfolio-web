@@ -42,6 +42,11 @@
   const additionalCount = additionalSkills.length
   const additionalRemainder = additionalCount % 4
   const additionalFull = additionalCount - additionalRemainder
+  
+  // For primary skills (centering last row when incomplete)
+  const primaryCount = primarySkills.length
+  const primaryRemainder = primaryCount % 4
+  const primaryFull = primaryCount - primaryRemainder
 </script>
 
 <section id="skills" class="py-20 relative section-transition" bind:this={sectionRef}>
@@ -69,19 +74,62 @@
           </h3>
         {/if}
         
-        <!-- Desktop Layout: uniform grid so items wrap evenly -->
+        <!-- Desktop Layout: show full rows of 4, and center the last incomplete row -->
         <div class="hidden lg:block">
           <div class="max-w-4xl mx-auto">
-            <div class="grid grid-cols-4 gap-8 mb-12">
-              {#each primarySkills as skill, index}
-                <SkillCard 
-                  {skill} 
-                  isVisible={primarySkillsVisible}
-                  animationDelay="{0.1 + index * 0.08}"
-                  animationType="bounce-in"
-                />
-              {/each}
-            </div>
+            {#if primaryFull > 0}
+              <div class="grid grid-cols-4 gap-8 mb-8">
+                {#each primarySkills.slice(0, primaryFull) as skill, index}
+                  <SkillCard 
+                    {skill} 
+                    isVisible={primarySkillsVisible}
+                    animationDelay="{0.1 + index * 0.08}"
+                    animationType="bounce-in"
+                  />
+                {/each}
+              </div>
+            {/if}
+
+            {#if primaryRemainder === 1}
+              <div class="flex justify-center">
+                <div class="grid grid-cols-1 gap-8 max-w-2xl">
+                  {#each primarySkills.slice(primaryFull) as skill, index}
+                    <SkillCard 
+                      {skill}
+                      isVisible={primarySkillsVisible}
+                      animationDelay="{0.1 + index * 0.08}"
+                      animationType="bounce-in"
+                    />
+                  {/each}
+                </div>
+              </div>
+            {:else if primaryRemainder === 2}
+              <div class="flex justify-center">
+                <div class="grid grid-cols-2 gap-8 max-w-2xl">
+                  {#each primarySkills.slice(primaryFull) as skill, index}
+                    <SkillCard 
+                      {skill}
+                      isVisible={primarySkillsVisible}
+                      animationDelay="{0.1 + index * 0.08}"
+                      animationType="bounce-in"
+                    />
+                  {/each}
+                </div>
+              </div>
+            {:else if primaryRemainder === 3}
+              <div class="flex justify-center">
+                <div class="grid grid-cols-3 gap-8 max-w-2xl">
+                  {#each primarySkills.slice(primaryFull) as skill, index}
+                    <SkillCard 
+                      {skill}
+                      isVisible={primarySkillsVisible}
+                      animationDelay="{0.1 + index * 0.08}"
+                      animationType="bounce-in"
+                    />
+                  {/each}
+                </div>
+              </div>
+            {/if}
           </div>
         </div>
 

@@ -31,6 +31,18 @@ export const primarySkills: Skill[] = [
     color: '#6DB33F',
     level: 78
   },
+  {
+    name: 'Flask',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
+    color: '#000000',
+    level: 70
+  },
+  {
+    name: 'FastAPI',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
+    color: '#009688',
+    level: 70
+  },
   { 
     name: 'Angular', 
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',

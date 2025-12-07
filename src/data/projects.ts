@@ -2,13 +2,13 @@ import type { Project } from '../types'
 
 export const projects: Project[] = [
   {
-    id: 'taskflow',
-    title: 'TaskFlow',
-    description: 'Web application for managing tasks and projects using the Kanban methodology.',
-    image: 'https://i.imgur.com/jxJV5qV.jpeg',
-    technologies: ['Next.js', 'Tailwind', 'SQL Server', 'Azure'],
-    github: 'https://github.com/CALR0/KanbanProject',
-    demo: 'https://task-flow-dps.vercel.app'
+    id: 'safemap',
+    title: 'SafeMap',
+    description: 'Mobile application for reporting incidents — attach videos and photos and view a real-time map of reports.',
+    image: 'https://i.imgur.com/8ob86PU.png',
+    technologies: ['Flutter', 'Cloudinary', 'Firestore'],
+    github: 'https://github.com/CALR0/safe-map-app',
+    demo: 'https://github.com/CALR0/safe-map-app'
   },
   {
     id: 'talentoLocalBack',
@@ -20,13 +20,13 @@ export const projects: Project[] = [
     demo: 'https://talento-local-web-client.vercel.app'
   },
   {
-    id: 'safemap',
-    title: 'SafeMap',
-    description: 'Mobile application for reporting incidents — attach videos and photos and view a real-time map of reports.',
-    image: 'https://i.imgur.com/8ob86PU.png',
-    technologies: ['Flutter', 'Cloudinary', 'Firestore'],
-    github: 'https://github.com/CALR0/safe-map-app',
-    demo: 'https://github.com/CALR0/safe-map-app'
+    id: 'taskflow',
+    title: 'TaskFlow',
+    description: 'Web application for managing tasks and projects using the Kanban methodology.',
+    image: 'https://i.imgur.com/jxJV5qV.jpeg',
+    technologies: ['Next.js', 'Tailwind', 'SQL Server', 'Azure'],
+    github: 'https://github.com/CALR0/KanbanProject',
+    demo: 'https://task-flow-dps.vercel.app'
   },
   {
     id: 'blockloom',

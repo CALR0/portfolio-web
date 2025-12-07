@@ -33,7 +33,7 @@ export const translations = {
       whatIDo: 'Work approach',
       skills: [
         'Frontend Development (React (Typescript, Javascript), Angular, Svelte, HTML, CSS).',
-        'Backend Development (.NET, Node.js, Next.js, Spring Boot).',
+        'Backend Development (.NET, Node.js, Next.js, Spring Boot, Flask, FastAPI).',
         'Database Creation & Management (PostgreSQL, MySQL, Azure).',
         'Building and managing RESTful APIs.',
         'Version control with Git, and collaborative work using GitHub, Azure DevOps.'
@@ -95,7 +95,7 @@ export const translations = {
     // Skills Section
     skills: {
       title: 'Skills',
-      description: 'I have hands-on experience with core technologies like Node.js, .NET, Spring Boot and others, allowing me to build fullstack applications with clean architecture and modern development practices.',
+      description: 'I have hands-on experience with core technologies like Node.js, .NET, Spring Boot, Flask, FastAPI, among others, allowing me to build fullstack applications with clean architecture and modern development practices.',
       coreTitle: 'Core technologies & frameworks',
       additionalTitle: 'Additional tools & technologies',
       frontendExpertise: "I'm especially strong in frontend development, with solid experience building responsive, component-based user interfaces using React, Angular, Svelte, HTML, CSS."
@@ -213,7 +213,7 @@ export const translations = {
       whatIDo: 'Enfoque de trabajo',
       skills: [
         'Desarrollo Frontend (React (TypeScript, JavaScript), Angular, Svelte, HTML, CSS).',
-        'Desarrollo Backend (.NET, Node.js, Next.js, Spring Boot).',
+        'Desarrollo Backend (.NET, Node.js, Next.js, Spring Boot, Flask, FastAPI).',
         'Creación y gestión de Bases de Datos (PostgreSQL, MySQL, Azure).',
         'Construcción y gestión de APIs RESTful.',
         'Control de versiones con Git, y trabajo colaborativo con GitHub, Azure DevOps.'
@@ -275,7 +275,7 @@ export const translations = {
     // Skills Section
     skills: {
       title: 'Habilidades',
-      description: 'Tengo experiencia con tecnologías principales como Node.js, .NET, Spring Boot y otras más, lo que me permite construir aplicaciones fullstack con arquitectura limpia y prácticas de desarrollo modernas.',
+      description: 'Tengo experiencia con tecnologías principales como Node.js, .NET, Spring Boot, Flask, FastAPI y otras más, lo que me permite construir aplicaciones fullstack con arquitectura limpia y prácticas de desarrollo modernas.',
       coreTitle: 'Tecnologías y frameworks principales',
       additionalTitle: 'Herramientas y tecnologías adicionales',
       frontendExpertise: 'Soy especialmente fuerte en desarrollo frontend, con experiencia sólida construyendo interfaces de usuario responsivas y basadas en componentes usando React, Angular, Svelte, HTML, CSS.'
