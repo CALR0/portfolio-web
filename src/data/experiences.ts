@@ -18,21 +18,6 @@ export const experiences: Experience[] = [
     current: true
   },
   {
-    id: 'melropDesktop',
-    title: 'Software Developer',
-    company: 'Melrop Store',
-    location: 'Santa Marta, CO',
-    period: 'melropDesktop.period',
-    description: 'Designed and developed a Java-based desktop application to manage product inventory efficiently.',
-    achievements: [
-      'Implemented CRUD operations for products, categories, and inventory.',
-      'Integrated local database storage using PostgreSQL.',
-      'Designed a modular architecture to separate UI, logic, and data layers, improving maintainability.'
-    ],
-    technologies: ['Java', 'JavaFX', 'PostgreSQL', 'Launch4j'],
-    current: false
-  },
-  {
     id: 'melropWeb',
     title: 'Web Developer',
     company: 'Melrop Store',

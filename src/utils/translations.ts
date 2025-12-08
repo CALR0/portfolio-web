@@ -50,9 +50,6 @@ export const translations = {
         systemsEngineering: {
           period: '2021 - Present'
         },
-        melropDesktop: {
-          period: 'August 2023 - January 2024'
-        },
         melropWeb: {
           period: 'January 2025 - June 2025'
         }
@@ -67,16 +64,6 @@ export const translations = {
             'Learning advanced programming concepts, data structures, and algorithms.',
             'Gaining expertise in database design, system architecture, and project management.',
             'Participating in academic projects involving full-stack web development.'
-          ]
-        },
-        melropDesktop: {
-          title: 'Software Developer',
-          company: 'Melrop Store',
-          description: 'Designed and developed a Java-based desktop application to manage product inventory efficiently.',
-          achievements: [
-            'Implemented CRUD operations for products, categories, and inventory.',
-            'Integrated local database storage using PostgreSQL.',
-            'Designed a modular architecture to separate UI, logic, and data layers, improving maintainability.'
           ]
         },
         melropWeb: {
@@ -230,9 +217,6 @@ export const translations = {
         systemsEngineering: {
           period: '2021 - Presente'
         },
-        melropDesktop: {
-          period: 'Agosto 2023 - Enero 2024'
-        },
         melropWeb: {
           period: 'Enero 2025 - Junio 2025'
         }
@@ -247,16 +231,6 @@ export const translations = {
             'Aprendiendo conceptos avanzados de programación, estructuras de datos y algoritmos.',
             'Adquiriendo experiencia en diseño de bases de datos, arquitectura de sistemas y gestión de proyectos.',
             'Participando en proyectos académicos que involucran desarrollo web full-stack.'
-          ]
-        },
-        melropDesktop: {
-          title: 'Desarrollador de Software',
-          company: 'Melrop Store',
-          description: 'Diseño y desarrollo de aplicación de escritorio basada en Java para gestionar el inventario de productos de manera eficiente.',
-          achievements: [
-            'Implementé operaciones CRUD para productos, categorías e inventario.',
-            'Integré almacenamiento de base de datos local usando PostgreSQL.',
-            'Diseñé una arquitectura modular para separar las capas de UI, lógica y datos, mejorando la mantenibilidad.'
           ]
         },
         melropWeb: {
